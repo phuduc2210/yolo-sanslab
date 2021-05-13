@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YOLO-SANSLAB</title>
+	<link rel="stylesheet" type="text/css" href="../static/index.css">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../static/index.js"></script>
+</head>
+<body>
+  <div id="menu">
+
+    <ul>
+
+        <li><a href="{{url_for('home')}}">Main menu</a></li>
+
+        <li><a href="{{url_for('get_aboutus')}}">About us</a></li>
+    </ul>
+
+    </div>
+
+
+<div class='App'>
+    <header class='App-header'>
+        <p><u>
+          Object Detection - YOLO
+        </u></p>
+        <div className="pre_img">
+          <span><img id="imagebox" src=""></span>
+        </div>
+        <form>
+          <input id="imageinput" type="file" name="image" onchange="readUrl(this)">
+        </form>
+			<button name="send" id = "sendbutton">Send</button>
+	</header>
+</div>
+<div class="text-right">
+
+  <hr />
+  <address style="text-align: right; font-weight: bold;">
+      Contact us by email: phuduccva@gmail.com<br/>
+      Phone number: 0919879463<br/>
+      Team YOLO will support you!
+  </address>
+</div>
+</body>
+</html>
